@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
+  "engines":{"node": "6.10.x"},
   "scripts": {
     "dev": "gulp",
     "start": "gulp --production"
