@@ -2,7 +2,7 @@
   "name": "primeiraApp",
   "version": "1.0.0",
   "description": "",
-  "main": "loader.js",
+  "main": "gulpfile.js",
   "scripts": {
     "dev": "gulp",
     "start": "gulp --production"
