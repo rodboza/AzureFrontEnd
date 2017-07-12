@@ -6,9 +6,9 @@
   "engines":{"node": "6.10.x",
     "npm": "3.10.x"},
   "scripts": {
-    "dev": "node gulp",
-    "start": "node gulp --production",
-    "install": "node gulp --production"
+    "dev": "gulp",
+    "start": "gulp --production",
+    "install": "gulp --production"
   },
   "author": "RODBOZA",
   "license": "ISC",
