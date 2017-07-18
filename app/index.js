@@ -1,4 +1,4 @@
-angular.module('primeiraApp', [
+angular.module('azurefrontend', [
   'ui.router',
   'ngAnimate',
   'toastr'

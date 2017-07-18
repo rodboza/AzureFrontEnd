@@ -1,12 +1,13 @@
-angular.module('primeiraApp').config([
+angular.module('azurefrontend').config([
   '$stateProvider',
   '$urlRouterProvider',
   '$httpProvider',
   function ($stateProvider, $urlRouterProvider, $httpProvider) {
-    $stateProvider.state('dashboard', {
-      url: "/dashboard",
-      templateUrl: "dashboard/dashboard.html"
-    }).state('billingCycle', {
+    console.console.log('$stateProvider >>>' + $stateProvider);
+    $stateProvider.state('auth', {
+      url: "/auth",
+      templateUrl: "auth.html"
+    }).state('billingCycauthle', {
       url: "/billingCycles?page",
       templateUrl: "billingCycle/tabs.html"
     })
@@ -25,8 +26,10 @@ angular.module('primeiraApp').config([
 
       function validateUser() {
         const user = auth.getUser()
-        const authPage = '/auth.html'
+        const authPage = '/auth'
         const isAuthPage = $window.location.href.includes(authPage)
+
+        console.console.log('$window.location.href >>>' + $$window.location.href);
 
         if (!user && !isAuthPage) {
           $window.location.href = authPage

@@ -1,4 +1,4 @@
-angular.module('primeiraApp').constant('consts', {
+angular.module('azurefrontend').constant('consts', {
   _appName: 'RODBOZA - Frontend APP',
   _version: '1.0',
   _owner: 'RODBOZA',

@@ -1,7 +1,7 @@
 {
-  "name": "primeiraApp",
+  "name": "azurefrontend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Teste aplicação front end no Azure",
   "main": "gulpfile.js",
   "engines":{"node": "6.10.x",
     "npm": "3.10.x"},
@@ -10,7 +10,7 @@
     "start": "gulp --production",
     "install": "gulp --production"
   },
-  "author": "RODBOZA",
+  "author": "Rodboza",
   "license": "ISC",
   "dependencies": {
     "admin-lte": "^2.3.6",
