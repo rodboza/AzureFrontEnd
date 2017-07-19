@@ -31,7 +31,7 @@ angular.module('azurefrontend').config([
         const authPage = '/auth'
         const isAuthPage = $window.location.href.includes(authPage)
 
-        console.console.log('$window.location.href >>>' + $$window.location.href);
+        console.console.log('$window.location.href >>>' + $window.location.href);
 
         if (!user && !isAuthPage) {
           $window.location.href = authPage
