@@ -1,4 +1,4 @@
-/*
+console.log("inicio authFactory.js");
 
 angular.module('azurefrontend').factory('auth', [
     '$http',
@@ -65,4 +65,4 @@ function AuthFactory($http, $rootScope, consts) {
     return { signup, login, logout, validateToken, getUser }
 }
 
-*/
+console.log("inicio authFactory.js");
