@@ -1,4 +1,4 @@
-angular.module('primeiraApp').factory('auth', [
+angular.module('azurefrontend').factory('auth', [
     '$http',
     '$rootScope',
     'consts',
