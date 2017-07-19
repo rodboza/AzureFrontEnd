@@ -1,3 +1,5 @@
+/*
+
 angular.module('azurefrontend').factory('auth', [
     '$http',
     '$rootScope',
@@ -62,3 +64,5 @@ function AuthFactory($http, $rootScope, consts) {
 
     return { signup, login, logout, validateToken, getUser }
 }
+
+*/

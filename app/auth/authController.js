@@ -1,3 +1,5 @@
+/*
+
 angular.module('azurefrontend').controller('AuthCtrl', [
   '$location',
   'auth',
@@ -24,3 +26,5 @@ function AuthController($location, auth, msgs) {
         auth.logout(() => $location.path('/'))
     }
 }
+
+*/
