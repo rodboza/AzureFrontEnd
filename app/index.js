@@ -1,4 +1,4 @@
-console.console.log('inicio index.js');
+console.log('inicio index.js');
 
 angular.module('azurefrontend', [
   'ui.router',
@@ -6,4 +6,4 @@ angular.module('azurefrontend', [
   'toastr'
 ])
 
-console.console.log('fim index.js');
+console.log('fim index.js');

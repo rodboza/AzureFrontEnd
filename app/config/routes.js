@@ -1,3 +1,5 @@
+console.log('inicio routes.js');
+
 angular.module('azurefrontend').config([
   '$stateProvider',
   '$urlRouterProvider',
@@ -47,3 +49,6 @@ angular.module('azurefrontend').config([
       }
     }
   ])
+
+
+console.log('fim routes.js');

@@ -1,3 +1,5 @@
+console.log('inicio consts.js');
+
 angular.module('azurefrontend').constant('consts', {
   _appName: 'RODBOZA - Frontend APP',
   _version: '1.0',
@@ -9,4 +11,5 @@ angular.module('azurefrontend').constant('consts', {
   _userKey: '_primeira_app_user'
 }).run(['$rootScope', 'consts', function ($rootScope, consts) {
   $rootScope.consts = consts
-}])
+}]);
+console.log('fim consts.js');
