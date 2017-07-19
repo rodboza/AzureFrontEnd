@@ -5,7 +5,7 @@ angular.module('azurefrontend').config([
   '$urlRouterProvider',
   '$httpProvider',
   function ($stateProvider, $urlRouterProvider, $httpProvider) {
-    console.console.log('$stateProvider >>>' + $stateProvider);
+    console.log('$stateProvider >>>' + $stateProvider);
     $stateProvider.state('auth', {
       url: "/auth",
       templateUrl: "auth.html"
@@ -31,7 +31,7 @@ angular.module('azurefrontend').config([
         const authPage = '/auth'
         const isAuthPage = $window.location.href.includes(authPage)
 
-        console.console.log('$window.location.href >>>' + $window.location.href);
+        console.log('$window.location.href >>>' + $window.location.href);
 
         if (!user && !isAuthPage) {
           $window.location.href = authPage
