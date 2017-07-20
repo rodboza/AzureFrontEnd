@@ -3,11 +3,12 @@ console.log("inicio authController.js");
 angular.module('azurefrontend').controller('AuthCtrl', [
   '$location',
   'auth',
-  'msgs',
+  //'msgs',
   AuthController
 ])
 
-function AuthController($location, auth, msgs) {
+function AuthController($location, auth) {
+//function AuthController($location, auth, msgs) {
     const vm = this
     vm.loginMode = true
 
