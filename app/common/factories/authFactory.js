@@ -23,6 +23,8 @@ function AuthFactory($http, $rootScope, consts) {
 
     function submit(url, user, callback) {
         console.log("call authFactory.js\sumbit");
+        console.log(`${consts._oapiUrl}/${url}`);
+        console.log(user);
         $http.post(`${consts._oapiUrl}/${url}`, user)
             .then(resp => {
                 localStorage.setItem(consts._userKey, JSON.stringify(resp.data))
