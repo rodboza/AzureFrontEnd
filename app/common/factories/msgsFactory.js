@@ -1,3 +1,5 @@
+console.log("inicio msgsFactory.js");
+            
 angular.module('azurefrontend').factory('msgs', [
   'toastr',
   MsgsFactory
@@ -22,3 +24,6 @@ function MsgsFactory(toastr) {
 
   return { addSuccess, addError }
 }
+
+
+console.log("fim msgsFactory.js");
