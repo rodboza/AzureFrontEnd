@@ -1,4 +1,4 @@
-angular.module('primeiraApp').factory('msgs', [
+angular.module('azurefrontend').factory('msgs', [
   'toastr',
   MsgsFactory
 ])
