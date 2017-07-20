@@ -1,4 +1,4 @@
-angular.module('primeiraApp').factory('handleResponseError', [
+angular.module('azurefrontend').factory('handleResponseError', [
     '$q',
     '$window',
     'consts',
