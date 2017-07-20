@@ -1,4 +1,4 @@
-/*
+console.log("inicio authController.js");
 
 angular.module('azurefrontend').controller('AuthCtrl', [
   '$location',
@@ -27,4 +27,4 @@ function AuthController($location, auth, msgs) {
     }
 }
 
-*/
+console.log("fim authController.js");

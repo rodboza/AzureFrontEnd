@@ -20,9 +20,9 @@ function AuthFactory($http, $rootScope, consts) {
     }
 
     function submit(url, user, callback) {
-        $http.post(`${consts.oapiUrl}/${url}`, user)
+        $http.post(`${consts._oapiUrl}/${url}`, user)
             .then(resp => {
-                localStorage.setItem(consts.userKey, JSON.stringify(resp.data))
+                localStorage.setItem(consts._userKey, JSON.stringify(resp.data))
                 $http.defaults.headers.common.Authorization = resp.data.token
                 if (callback) callback(null, resp.data)
             }).catch(function (resp) {
@@ -32,14 +32,14 @@ function AuthFactory($http, $rootScope, consts) {
 
     function logout(callback) {
         user = null
-        localStorage.removeItem(consts.userKey)
+        localStorage.removeItem(consts._userKey)
         $http.defaults.headers.common.Authorization = ''
         if (callback) callback(null)
     }
 
     function validateToken(token, callback) {
         if (token) {
-            $http.post(`${consts.oapiUrl}/validateToken`, { token })
+            $http.post(`${consts._oapiUrl}/validateToken`, { token })
                 .then(resp => {
                     if (!resp.data.valid) {
                         logout()
@@ -57,7 +57,7 @@ function AuthFactory($http, $rootScope, consts) {
 
     function getUser() {
         if(!user) {
-            user = JSON.parse(localStorage.getItem(consts.userKey))
+            user = JSON.parse(localStorage.getItem(consts._userKey))
         }
         return user
     }
@@ -65,4 +65,4 @@ function AuthFactory($http, $rootScope, consts) {
     return { signup, login, logout, validateToken, getUser }
 }
 
-console.log("inicio authFactory.js");
+console.log("fim authFactory.js");

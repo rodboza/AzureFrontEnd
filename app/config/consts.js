@@ -1,4 +1,4 @@
-console.log('inicio consts.js');
+console.log('inicio consts._js');
 
 angular.module('azurefrontend').constant('consts', {
   _appName: 'RODBOZA - Frontend APP',
@@ -12,4 +12,4 @@ angular.module('azurefrontend').constant('consts', {
 }).run(['$rootScope', 'consts', function ($rootScope, consts) {
   $rootScope.consts = consts
 }]);
-console.log('fim consts.js');
+console.log('fim consts._js');
