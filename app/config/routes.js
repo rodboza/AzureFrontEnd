@@ -14,7 +14,7 @@ angular.module('azurefrontend').config([
       templateUrl: "billingCycle/tabs.html"
     })
 
-    //$httpProvider.interceptors.push('handleResponseError')
+    $httpProvider.interceptors.push('handleResponseError')
   }])
   .run([
     '$rootScope',
