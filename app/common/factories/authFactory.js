@@ -29,6 +29,7 @@ function AuthFactory($http, $rootScope, consts) {
             .then(resp => {
                 localStorage.setItem(consts._userKey, JSON.stringify(resp.data));
                 $http.defaults.headers.common.Authorization = resp.data.token;
+                console.log(resp);
                 if (callback) callback(null, resp.data);
             }).catch(function (resp) {
                 console.log(resp);
