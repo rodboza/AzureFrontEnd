@@ -4,13 +4,13 @@
         <p class="login-box-msg">Bem vindo!</p>
         <form>
             <auth-field id="authName" model="auth.user.name" type="input"
-                placeholder="Informe o Nome" hide="auth.loginMode"></auth-field>
+                icon="user" placeholder="Informe o Nome" hide="auth.loginMode" ></auth-field>
             <auth-field id="authEmail" model="auth.user.email" type="email"
-                placeholder="Informe o E-mail"></auth-field>
+                icon="envelope" placeholder="Informe o E-mail"></auth-field>
             <auth-field id="authPass" model="auth.user.password" type="password"
-                placeholder="Informe a Senha"></auth-field>
+                icon="lock" placeholder="Informe a Senha"></auth-field>
             <auth-field id="authConfirmPass" model="auth.user.confirm_password" type="password"
-                placeholder="Confirme a Senha" hide="auth.loginMode"></auth-field>
+                icon="log-in" placeholder="Confirme a Senha" hide="auth.loginMode"></auth-field>
             <div class="row">
                 <div class="col-sm-4">
                     <button class="btn btn-primary btn-block btn-flat"
