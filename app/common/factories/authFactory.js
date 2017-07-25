@@ -27,11 +27,12 @@ function AuthFactory($http, $rootScope, consts) {
         console.log(user);
         $http.post(`${consts._oapiUrl}/v1/auth/${url}`, user)
             .then(resp => {
-                localStorage.setItem(consts._userKey, JSON.stringify(resp.data))
-                $http.defaults.headers.common.Authorization = resp.data.token
-                if (callback) callback(null, resp.data)
+                localStorage.setItem(consts._userKey, JSON.stringify(resp.data));
+                $http.defaults.headers.common.Authorization = resp.data.token;
+                if (callback) callback(null, resp.data);
             }).catch(function (resp) {
-                if (callback) callback(resp.data.errors, resp.data)
+                console.log(resp);
+                if (callback) callback(resp.data.errors, resp.data);
             });
     }
 
