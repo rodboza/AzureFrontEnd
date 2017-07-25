@@ -7,7 +7,7 @@ angular.module('azurefrontend').constant('consts', {
   _year: '2017',
   _site: 'http://rodboza.azurewebsites.net/',
   _apiUrl: 'http://rodbozabackend.azurewebsites.net/api',
-  _oapiUrl: 'http://rodbozabackend.azurewebsites.net/auth',
+  _oapiUrl: 'http://rodbozabackend.azurewebsites.net',
   _userKey: '_primeira_app_user'
 }).run(['$rootScope', 'consts', function ($rootScope, consts) {
   $rootScope.consts = consts
