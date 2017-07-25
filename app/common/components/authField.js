@@ -19,7 +19,7 @@ angular.module('azurefrontend').component('authField', {
 			<input ng-model="$ctrl.model" id="{{ $ctrl.id }}" class="form-control"
 				type="{{ $ctrl.type }}" placeholder="{{ $ctrl.placeholder }}"
 				ng-hide="$ctrl.hide" />
-			<span class="{{ $ctrl.iconClasses }}"></span>
+			<span class="{{ $ctrl.iconClasses }}" ng-hide="$ctrl.hide"></span>
 		</div>
 	`
 })
