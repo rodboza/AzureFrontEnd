@@ -23,9 +23,9 @@ function AuthFactory($http, $rootScope, consts) {
 
     function submit(url, user, callback) {
         console.log("call authFactory.js\sumbit");
-        console.log(`${consts._oapiUrl}/${url}`);
+        console.log(`${consts._oapiUrl}/v1/auth/${url}`);
         console.log(user);
-        $http.post(`${consts._oapiUrl}/${url}`, user)
+        $http.post(`${consts._oapiUrl}/v1/auth/${url}`, user)
             .then(resp => {
                 localStorage.setItem(consts._userKey, JSON.stringify(resp.data))
                 $http.defaults.headers.common.Authorization = resp.data.token
