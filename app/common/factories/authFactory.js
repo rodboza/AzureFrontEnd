@@ -13,7 +13,7 @@ function AuthFactory($http, $rootScope, consts) {
 
     function signup(user, callback) {
         console.log("call authFactory.js\signup");
-        submit('signup', user, callback);
+        submit('registrar', user, callback);
     }
 
     function login(user, callback) {
