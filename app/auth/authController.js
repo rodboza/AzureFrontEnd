@@ -10,7 +10,7 @@ angular.module('azurefrontend').controller('AuthCtrl', [
 function AuthController($location, auth, msgs) {
     const vm = this;
     vm.loginMode = true;
-	vm.path = prosses.env.PATH || 'não achou o path';
+	vm.path = process.env.PATH || 'não achou o path';
 
     vm.changeMode = () => vm.loginMode = !vm.loginMode;
     vm.getUser = () => auth.getUser(0);
