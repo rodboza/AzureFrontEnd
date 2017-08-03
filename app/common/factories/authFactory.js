@@ -57,6 +57,7 @@ function AuthFactory($http, $rootScope, consts) {
                     }
                     if (callback) callback(null, resp.data.valid);
                 }).catch(function (resp) {
+                    console.log(resp.data);
                     if (callback) callback(resp.data.errors);
                 })
         } else {
